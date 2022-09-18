@@ -540,8 +540,12 @@ cursor: pointer;
     margin-top: 5.3rem;
     font-size: 1.1rem;
     margin-bottom: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer_text    {
+    text-align: center;
     font-size: 0.75rem;
 }
 .footer_copyright   {
@@ -550,6 +554,7 @@ cursor: pointer;
 }
 
 .footer_navbar  {
+    text-align: center;
     display: flex;
     flex-direction: column;
     color: #000;
@@ -558,6 +563,8 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     color: #000;
+    text-align: center;
+
 }
 .footer_nav_item_link   {
     display: flex;
@@ -566,6 +573,7 @@ cursor: pointer;
     text-decoration: none;
     font-size: 0.75rem;
     line-height: 160%;
+    text-align: center;
 
 }
 /* media queries  */
@@ -668,6 +676,17 @@ cursor: pointer;
     .slider_right   {
         margin-left: 0;
     }
+    .footer_block   {
+        margin: 0  auto;
+    }
+    .footer_copyright   {
+        margin-top: 2rem;
+
+    }
+    .footer_container   {
+        flex-wrap: wrap;
+    }
+    
 }
 @media screen and  (max-width:958px){
     nav, .navbar_login  {
@@ -685,10 +704,4 @@ cursor: pointer;
         padding-top: 0.6rem;
         padding-right: 0.6rem;
     }
-}
-@media screen and  (max-width:390px){
-    .footer_container   {
-        flex-wrap: wrap;
-    }
-    
 }
