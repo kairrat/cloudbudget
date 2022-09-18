@@ -520,7 +520,7 @@ text-transform: uppercase;
 margin-top: 1.6rem;
 cursor: pointer;
 }
-img  {
+.visa {
     max-width: 216px;
     max-height: 31px;
     width: 100%;
@@ -630,9 +630,7 @@ img  {
     background-repeat: no-repeat;
 
 }
-.footer img  {
-   
-}
+
     .features_container {
         margin: 0 auto;
     }
