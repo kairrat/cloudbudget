@@ -4,6 +4,24 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
 img {
     display: block;
 }
@@ -33,11 +51,15 @@ img {
     display: flex;
     justify-content: space-evenly;
     align-items:  center  ;
-    padding:1rem 7%;
+    padding:1.2rem 7%;
     position: fixed;
     top:0; left: 0; right: 0;
-    background-color: #ED4C5C;
+    background-color:transparent;
 
+}
+.closemenu  {
+    color: #fff;
+    display: none;
 }
 .navbar_logo_img{
     margin-right: 10px;
@@ -63,12 +85,14 @@ color: #fff;
     color: #fff;
 
 }
-nav ul li {
+.main_navbar  .main_nav_menu li {
     display: inline-block;
     font-size: 0.9rem;
     font-weight: 400;
     color: #fff;
     margin-right: 10px;
+    transition: top 1s ease;
+
 }
 
 
@@ -316,6 +340,7 @@ border-radius: 8px;
     color: #ED4C5C;
     background: none;
     cursor: pointer;
+    margin-bottom: 1.563rem;
 }
 
 .technology {
@@ -589,8 +614,32 @@ cursor: pointer;
     }
 
     
-    nav, .navbar_login {
+    .main_nav_menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
         display: none;
+        background-color: #ED4C5C;
+    }
+
+
+    .nav_item ,.nav_item_link  {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .main_navbar .main_nav_menu .closemenu  {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+      
     }
 
     .navbar_logo    {
@@ -617,6 +666,11 @@ cursor: pointer;
 
         margin-top: 94px;
         margin-left: 50px;
+    }
+    .closemenu {
+    display: block;
+    top: 20px;
+    right: 20px;
     }
  
     .features_center_block  {
@@ -686,6 +740,8 @@ cursor: pointer;
     .footer_container   {
         flex-wrap: wrap;
     }
+    
+    
     
 }
 @media screen and  (max-width:958px){
