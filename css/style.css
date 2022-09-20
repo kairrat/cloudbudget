@@ -760,4 +760,36 @@ cursor: pointer;
         padding-top: 0.6rem;
         padding-right: 0.6rem;
     }
+    .main_nav_menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+        background-color: #ED4C5C;
+    }
+    .nav_item_link  {
+        
+            font-size: 36px;
+            margin-bottom: 10px;
+        
+    }
+    .closemenu {
+        display: block;
+        top: 20px;
+        right: 20px;
+        }
+        .main_navbar .main_nav_menu .closemenu  {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+          
+        }
 }
