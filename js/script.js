@@ -37,4 +37,5 @@ window.onscroll = function() {
         document.querySelector('.navbar').style.backgroundColor = '#ED4C5C';
 
     }
+
 }
